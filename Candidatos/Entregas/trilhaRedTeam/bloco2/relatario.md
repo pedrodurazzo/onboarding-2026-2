@@ -7,7 +7,7 @@
 ---
 
 ## 1. Visão Geral
-Esse relatório documenta a fase de reconhecimento do site **OWASP Juice Shop**. O foco desta etapa é analisar a estrutura da aplicação além da página inicial, interceptando tráfego e inspecionando arquivos side-client para identificar dados expostos e contas admins.
+Esse relatório documenta a fase de reconhecimento do site **OWASP Juice Shop**. Esta etapa é analisar a estrutura além da página inicial, interceptando tráfego e inspecionando arquivos side-client para identificar dados expostos e contas admins.
 
 ---
 
@@ -17,8 +17,6 @@ Esse relatório documenta a fase de reconhecimento do site **OWASP Juice Shop**.
 ---
 
 ## 3. Rotas, Arquivos e Endpoints Descobertos
-
-Através da navegação na aplicação combinada com a análise de tráfego no proxy de interceptação, foram mapeadas as seguintes rotas e recursos de interesse no alvo:
 
 ### 3.1. Rotas
 - `/#/score-board`: Painel de pontuação e desafios do site.
