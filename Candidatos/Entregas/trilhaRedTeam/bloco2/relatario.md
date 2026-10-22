@@ -36,6 +36,8 @@ Através da navegação na aplicação combinada com a análise de tráfego no p
 <img width="1898" height="1031" alt="image" src="https://github.com/user-attachments/assets/47cd574a-467d-4c72-8a34-ae5dde36dbf9" />
 <img width="1916" height="321" alt="image" src="https://github.com/user-attachments/assets/7786569a-1d2d-449a-8071-055bf3239a8d" />
 
+---
+
 > **Endpoints e Arquivos Expostos**
 <img width="1919" height="399" alt="ftp" src="https://github.com/user-attachments/assets/aecedc15-3de6-40e6-bb1e-8a5fd31e7778" />
 <img width="1919" height="271" alt="endpoints" src="https://github.com/user-attachments/assets/1825ac7f-f92e-4473-95e7-6925d53b35c4" />
@@ -47,15 +49,15 @@ Através da navegação na aplicação combinada com a análise de tráfego no p
 
 ## 4. Identificação do E-mail do Administrador
 
-Para identificar o endereço de e-mail da conta com privilégios de administrador do sistema, seguiu-se o procedimento abaixo:
-
 1. **Análise de Requisições de API:**
-   - Durante a navegação inicial e consulta a avaliações de produtos (feedbacks), interceptou-se a requisição para `/api/Feedbacks` ou `/api/Products/1/reviews`.
+   - Durante a navegação inicial e consulta a avaliações de produtos (feedbacks), interceptou-se a requisição para `/api/Feedbacks` ou `/rest/products/1/reviews`.
 2. **Inspeção da Estrutura de Usuários:**
-   - A resposta JSON contida nos endpoints retornou os objetos associados aos criadores dos comentários, identificando que o `UserId: 1` corresponde à conta admin.
+   - Os dado nos endpoints retornou os objetos associados aos criadores dos comentários, identificando que o `UserId: 1` corresponde a conta admin.
 3. **Mapeamento do E-mail da Conta Admin:**
    - A requisição para os detalhes da conta ID 1 ou a verificação dos dados de avaliação revelou o e-mail da conta administradora do sistema:  
      `admin@juice-sh.op`
 
 <img width="1546" height="911" alt="image" src="https://github.com/user-attachments/assets/550cb0b1-b488-4bf5-b546-6f7db9b60f34" />
 <img width="1547" height="912" alt="image" src="https://github.com/user-attachments/assets/74a6fa9d-b297-4302-9c5e-12c146e71f59" />
+<img width="1549" height="909" alt="image" src="https://github.com/user-attachments/assets/810f5761-1baa-4520-8a71-356dbda47a33" />
+
